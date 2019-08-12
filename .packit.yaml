@@ -16,8 +16,6 @@ jobs:
 
 actions:
   post-upstream-clone:
-    - HOME=/tmp
-    - pip3 install docutils
-    - PATH=$PATH:/tmp/.local/bin
-    - make man
+    - pip3 install --install-option="--prefix=/tmp" docutils
+    - PYTHONPATH=/tmp make man
     - mv tmp/fmf* .
