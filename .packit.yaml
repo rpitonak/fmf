@@ -17,5 +17,5 @@ jobs:
 actions:
   post-upstream-clone:
     - pip3 install --install-option="--prefix=/tmp" docutils
-    - PYTHONPATH=/tmp make man
-    - mv tmp/fmf* .
+    - make man PYTHONPATH=/tmp
+    - mv /tmp/fmf* .
