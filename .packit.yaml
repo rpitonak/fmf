@@ -16,7 +16,7 @@ jobs:
 
 actions:
   post-upstream-clone:
-    - export HOME=/tmp
+    - HOME=/tmp
     - pip3 install docutils
     - PATH=$PATH:/tmp/.local/bin
     - make man
