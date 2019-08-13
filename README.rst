@@ -9,7 +9,7 @@ Flexible Metadata Format
 Description
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
- The ``fmf`` Python module and command line tool implement a
+The ``fmf`` Python module and command line tool implement a
 flexible format for defining metadata in plain text files which
 can be stored close to the source code and structured in a
 hierarchical way with support for inheritance.
