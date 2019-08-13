@@ -32,9 +32,9 @@ coverage: tmp
 docs: man
 	cd docs && make html
 man: source
-	cp docs/header.txt $(TMP)/man.rst
-	tail -n+7 README.rst >> $(TMP)/man.rst
-	rst2man $(TMP)/man.rst > $(TMP)/$(PACKAGE)/fmf.1
+	cp docs/header.txt ./man.rst
+	tail -n+7 README.rst >> ./man.rst
+	rst2man $(TMP)/man.rst > ./fmf.1
 
 
 # RPM packaging
