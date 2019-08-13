@@ -16,4 +16,5 @@ jobs:
 
 actions:
   post-upstream-clone:
-    - make man TMP=.
+    - make man
+    - mv tmp/fmf* .
