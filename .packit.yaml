@@ -16,4 +16,6 @@ jobs:
 
 actions:
   post-upstream-clone:
-    - make man
+    - cp docs/header.txt ./man.rst
+    - tail -n+7 README.rst >> ./man.rst
+    - rst2man $(TMP)/man.rst > $(TMP)/$(PACKAGE)/fmf.1
